@@ -5,8 +5,8 @@
   --text:#e7edf7;
   --text-2:#1F1F1F;
   --muted:#a7b0c2;
-  --brand:#6aa7ff;
-  --brand-2:#2b6bf2;
+  --brand:#ffe46a;
+  --brand-2:#d4f22b;
   --ring: rgba(106,167,255,.4);
 }
 
@@ -35,6 +35,10 @@ body{
 .nav__brand{
   color:var(--text); text-decoration:none; font-weight:700; letter-spacing:.3px;
   font-size:1.1rem;
+}
+
+.nav__img{
+    width: 100px;
 }
 
 .nav__toggle{
