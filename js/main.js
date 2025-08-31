@@ -44,3 +44,27 @@
     lastWidth = w;
   });
 })();
+
+// copiar telefone
+
+(() => {
+  const btnPhone = document.querySelector('.contact__copy');
+  const toast = document.querySelector('.copy__toast');
+  if (!btnPhone || !toast) return;
+
+  btnPhone.addEventListener('click', async () => {
+    const value = btnPhone.dataset.copy || '';
+    try {
+      await navigator.clipboard.writeText(value);
+      toast.textContent = 'Copiado! ✅';
+    } catch {
+      toast.textContent = 'Não foi possível copiar :(';
+    }
+    // só aparece quando clicado
+    toast.hidden = false;
+    setTimeout(() => (toast.hidden = true), 1600);
+  });
+})();
+
+
+

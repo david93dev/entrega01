@@ -8,6 +8,9 @@
   --brand:#ffe46a;
   --brand-2:#d4f22b;
   --ring: rgba(106,167,255,.4);
+  --bg-profile:#0b0f1a; --panel:#0f1524; --text:#e7edf7; --muted:#a7b0c2;
+  --radius:14px; 
+  --container:1100px;
 }
 
 *{box-sizing:border-box}
@@ -215,6 +218,16 @@ body{
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
 }
 
+.member__link {
+  text-decoration: none;   
+  color: inherit;         
+}
+
+.member__link:hover,
+.member__link:focus {
+  text-decoration: underline; 
+}
+
 .team__photo {
   width: 120px;
   height: 120px;
@@ -233,4 +246,97 @@ body{
 .team__role {
   font-size: 0.95rem;
   color: var(--muted);
+}
+
+/* perfil */
+
+.profile{ background:var(--panel); color:var(--text); padding:3rem 1rem }
+.profile__container{ max-width:var(--container); margin:0 auto }
+
+.section-title{
+  font-size:clamp(1.4rem,3vw,1.8rem); margin:2rem 0 1rem; color:var(--brand); font-weight:800
+}
+
+/* Header */
+.profile__header{
+  display:grid; grid-template-columns: 180px 1fr; gap:1.5rem; align-items:center;
+}
+.profile__photo{
+  width:180px; height:180px; border-radius:50%; object-fit:cover;
+  border:4px solid var(--brand); box-shadow:0 8px 30px rgba(0,0,0,.35);
+}
+.profile__name{ font-size:clamp(1.8rem,4vw,2.4rem); margin:0 0 .25rem }
+.profile__role{ color:var(--muted); margin:.1rem 0 .75rem; font-weight:600 }
+
+.profile__facts{
+  list-style:none; padding:0; margin:0; display:flex; gap:1rem; flex-wrap:wrap
+}
+.fact__label{ color:var(--muted); font-weight:600; margin-right:.35rem }
+
+/* Sobre */
+.about__text{ color:var(--muted); line-height:1.7; max-width:70ch }
+
+/* Skills */
+.skills__groups{
+  display:grid; gap:1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+.skill__group{
+  background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius); padding:1rem
+}
+.skill__title{ margin:.2rem 0 1rem; font-size:1.05rem }
+.chips{ list-style:none; padding:0; margin:0; display:flex; gap:.5rem; flex-wrap:wrap }
+.chip{
+  background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08);
+  padding:.45rem .7rem; border-radius:999px; font-size:.95rem
+}
+
+/* Projetos */
+.projects__grid{
+  display:grid; gap:1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.project__card{
+  background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius); overflow:hidden; display:flex; flex-direction:column;
+  transition:transform .18s ease, box-shadow .2s ease;
+}
+.project__card:hover{ transform:translateY(-4px); box-shadow:0 10px 28px rgba(0,0,0,.35) }
+.project__thumb img{ width:100%; height:160px; object-fit:cover; display:block }
+.project__body{ padding:1rem }
+.project__title{ margin:.2rem 0 .5rem; font-size:1.05rem }
+.project__title a{ color:var(--text); text-decoration:none }
+.project__title a:hover{ text-decoration:underline }
+.project__desc{ color:var(--muted); margin:0 0 .8rem; line-height:1.6 }
+.project__tags{ display:flex; gap:.4rem; list-style:none; padding:0; margin:0; flex-wrap:wrap }
+.project__tags li{
+  background:#10182c; border:1px solid rgba(255,255,255,.08);
+  padding:.35rem .6rem; border-radius:999px; font-size:.85rem
+}
+
+/* Contato & Redes */
+.profile__contact{ margin-top:1rem }
+.contact__list{
+  list-style:none; padding:0; margin:0; display:grid; gap:.6rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.contact__link{
+  display:flex; align-items:center; gap:.6rem; padding:.8rem 1rem; border-radius:12px;
+  text-decoration:none; color:var(--text);
+  background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.06);
+}
+.contact__link:hover{ background:rgba(255,255,255,.06) }
+.contact__link img{ width:20px; height:20px }
+.contact__copy{ cursor:pointer; font: inherit; border:0; background:rgba(255,255,255,.03) }
+.copy__hint{ color:var(--muted); margin-left:.25rem; font-size:.85rem }
+.copy__toast{
+  margin-top:.6rem; border:1px;
+  padding:.5rem .75rem; border-radius:10px; color:#c9ffd6; display:inline-block
+}
+
+/* Responsivo */
+@media (max-width: 720px){
+  .profile__header{ grid-template-columns: 1fr; text-align:center }
+  .profile__facts{ justify-content:center }
 }

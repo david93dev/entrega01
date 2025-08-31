@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="nav__brand" href="#">
+          <img class="nav__img" src="../assets/img/logo.png" alt="logo equipe" />
+        </a>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-label="Abrir menu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+        >
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <ul class="nav__list">
+            <li><a class="nav__link nav__cta" href="../index.html">Voltar</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- perfil david -->
+
+    <section class="profile" id="perfil">
+      <div class="profile__container">
+        <!-- Cabeçalho: foto + infos básicas -->
+        <header class="profile__header">
+          <img
+            src="../assets/img/david.png"
+            alt="Foto de perfil de david"
+            class="profile__photo"
+            width="180"
+            height="180"
+          />
+
+          <div class="profile__meta">
+            <h1 class="profile__name">David</h1>
+            <p class="profile__role">Frontend Developer</p>
+
+            <ul class="profile__facts" aria-label="Informações rápidas">
+              <li>
+                <span class="fact__label">Local:</span>
+                <span class="fact__value">Campina Grande – PB</span>
+              </li>
+              <li>
+                <span class="fact__label">Idade:</span>
+                <span class="fact__value">32 anos</span>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        <!-- Sobre -->
+        <section class="profile__about" aria-labelledby="about-title">
+          <h2 id="about-title" class="section-title">Sobre</h2>
+          <p class="about__text">
+           Sou Desenvolvedor Frontend, atualmente atuando na FDS Games como 
+           programador frontend, onde participo do desenvolvimento de 
+           diferentes projetos. Estou cursando o 4º período de Sistemas no 
+           Centro Universitário Unifacisa. Iniciei meus estudos em programação 
+           em 2024 e, em 2025, conquistei minha primeira oportunidade profissional 
+           na área, marcando minha transição de carreira. Desde então, venho me dedicando a 
+           evoluir constantemente e tenho encontrado grande satisfação nesse novo desafio 
+           profissional.
+          </p>
+        </section>
+
+        <!-- Skills / Ferramentas -->
+        <section class="profile__skills" aria-labelledby="skills-title">
+          <h2 id="skills-title" class="section-title">Skills & Ferramentas</h2>
+
+          <div class="skills__groups">
+            <div class="skill__group">
+              <ul class="chips">
+                <li class="chip">JavaScript</li>
+                <li class="chip">Python</li>
+                <li class="chip">SQL</li>
+                <li class="chip">Java</li>
+                <li class="chip">CSS</li>
+                <li class="chip">HTML</li>
+                <li class="chip">React</li>
+                <li class="chip">Tailwind CSS</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="profile__projects" aria-labelledby="projects-title">
+          <h2 id="projects-title" class="section-title">Projetos</h2>
+
+          <div class="projects__grid">
+            <!-- Card 1 -->
+            <article class="project__card">
+              <a
+                class="project__thumb"
+                href="https://exemplo.com/projeto-1"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="assets/img/projeto-1.jpg"
+                  alt="Preview do Projeto 1"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project__body">
+                <h3 class="project__title">
+                  <a
+                    href="https://exemplo.com/projeto-1"
+                    target="_blank"
+                    rel="noopener"
+                    >Projeto 1</a
+                  >
+                </h3>
+                <p class="project__desc">
+                  SPA em React com consumo de API pública, cache leve e design
+                  responsivo.
+                </p>
+                <ul class="project__tags">
+                  <li>React</li>
+                  <li>Vite</li>
+                  <li>REST</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="project__card">
+              <a
+                class="project__thumb"
+                href="https://exemplo.com/projeto-2"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="assets/img/projeto-2.jpg"
+                  alt="Preview do Projeto 2"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project__body">
+                <h3 class="project__title">
+                  <a
+                    href="https://exemplo.com/projeto-2"
+                    target="_blank"
+                    rel="noopener"
+                    >Projeto 2</a
+                  >
+                </h3>
+                <p class="project__desc">
+                  Backend Node.js com autenticação JWT, testes básicos e CI
+                  simples.
+                </p>
+                <ul class="project__tags">
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>JWT</li>
+                </ul>
+              </div>
+            </article>
+
+           
+          </div>
+        </section>
+
+        <!-- Contato & Redes -->
+        <section class="profile__contact" aria-labelledby="contact-title">
+          <h2 id="contact-title" class="section-title">Contato & Redes</h2>
+
+          <ul class="contact__list">
+            <li>
+              <a
+                class="contact__link"
+                href="mailto:email@exemplo.com"
+                aria-label="Enviar e-mail"
+              >
+                <img src="assets/icons/mail.svg" alt="" aria-hidden="true" />
+                email@exemplo.com
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact__link"
+                href="https://instagram.com/seuuser"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="assets/icons/instagram.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                @seuuser
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact__link"
+                href="https://www.linkedin.com/in/seuuser"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="assets/icons/linkedin.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                linkedin.com/in/seuuser
+              </a>
+            </li>
+            <li></li>
+            <button
+              class="contact__link contact__copy"
+              data-copy="(83) 99999-0000"
+              aria-label="Copiar telefone"
+            >
+              <img src="assets/icons/phone.svg" alt="" aria-hidden="true" />
+              (83) 99999-0000 <span class="copy__hint">copiar</span>
+            </button>
+            <p class="copy__toast" role="status" aria-live="polite" hidden></p>
+          </ul>
+        </section>
+        
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
