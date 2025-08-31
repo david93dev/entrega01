@@ -162,5 +162,22 @@
   form.addEventListener('input', () => { success.hidden = true; }, { once: false });
 })();
 
+// Footer: ano automático + voltar ao topo com rolagem suave
+(function initFooter() {
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  const btn = document.querySelector('.to-top');
+  if (!btn) return;
+
+  function scrollTop() {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' });
+  }
+
+  btn.addEventListener('click', scrollTop);
+  btn.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); scrollTop(); }
+  });
+})();
 
