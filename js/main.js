@@ -64,8 +64,12 @@
     toast.hidden = false;
     setTimeout(() => (toast.hidden = true), 1600);
   });
-  // validação de formulário 
-  (function initContactForm() {
+
+  
+})
+
+();
+(function initContactForm() {
   const form = document.getElementById('contactForm');
   if (!form) return;
 
@@ -143,10 +147,9 @@
       return;
     }
 
-    // 👉 Aqui você integra com seu backend (fetch/POST). Enquanto isso, simulamos sucesso:
+    // aqui você integra com seu backend (fetch/POST). Enquanto isso, simulamos sucesso:
     try {
-      // Exemplo: await fetch('/api/contact', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ name: fullName.value, email: email.value, message: message.value }) });
-      form.reset();
+     
       success.textContent = 'Mensagem enviada com sucesso! 🎉';
       success.hidden = false;
     } catch (err) {
@@ -155,9 +158,8 @@
     }
   });
 
-  // Fechar alert de sucesso ao editar novamente
+  // fechar alert de sucesso ao editar novamente
   form.addEventListener('input', () => { success.hidden = true; }, { once: false });
-})();
 })();
 
 
