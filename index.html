@@ -102,6 +102,94 @@
         </div>
       </div>
     </section>
+    <!-- Seção Contato -->
+    <section class="contact" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title" class="section-title">Contato</h2>
+        <p class="section-subtitle">
+          Fale com a equipe — responderemos o quanto antes.
+        </p>
+
+        <form
+          id="contactForm"
+          class="contact__form"
+          action="#"
+          method="post"
+          novalidate
+        >
+          <div class="form__grid">
+            <label class="form__field" for="fullName">
+              <span>Nome completo</span>
+              <input
+                type="text"
+                id="fullName"
+                name="name"
+                placeholder="Seu nome e sobrenome"
+                required
+                aria-describedby="nameError"
+                autocomplete="name"
+              />
+              <small
+                id="nameError"
+                class="form__error"
+                role="alert"
+                hidden
+              ></small>
+            </label>
+
+            <label class="form__field" for="email">
+              <span>E-mail</span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="voce@exemplo.com"
+                required
+                aria-describedby="emailError"
+                autocomplete="email"
+              />
+              <small
+                id="emailError"
+                class="form__error"
+                role="alert"
+                hidden
+              ></small>
+            </label>
+          </div>
+
+          <label class="form__field" for="message">
+            <span>Mensagem</span>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Como podemos ajudar?"
+              required
+              aria-describedby="messageError"
+            ></textarea>
+            <small
+              id="messageError"
+              class="form__error"
+              role="alert"
+              hidden
+            ></small>
+          </label>
+
+          <button class="btn btn--primary" type="submit">Enviar</button>
+
+          <p
+            id="formSuccess"
+            class="form__success"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            Mensagem enviada com sucesso! 🎉
+          </p>
+        </form>
+      </div>
+    </section>
+
 
     <script src="./js/main.js"></script>
   </body>
