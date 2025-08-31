@@ -1,0 +1,202 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaN Squad - João Felipe </title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="nav__brand" href="#">
+          <img class="nav__img" src="../assets/img/logo.png" alt="logo equipe" />
+        </a>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-label="Abrir menu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+        >
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <ul class="nav__list">
+            <li><a class="nav__link nav__cta" href="../index.html">Voltar</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- perfil david -->
+
+    <section class="profile" id="perfil">
+      <div class="profile__container">
+        <!-- Cabeçalho: foto + infos básicas -->
+        <header class="profile__header">
+          <img
+            src="../assets/img/joao.png"
+            alt="Foto de perfil de João"
+            class="profile__photo"
+            width="180"
+            height="180"
+          />
+
+          <div class="profile__meta">
+            <h1 class="profile__name">João</h1>
+            <p class="profile__role">Back Developer</p>
+
+            <ul class="profile__facts" aria-label="Informações rápidas">
+              <li>
+                <span class="fact__label">Local:</span>
+                <span class="fact__value">Campina Grande – PB</span>
+              </li>
+              <li>
+                <span class="fact__label">Idade:</span>
+                <span class="fact__value">19 anos</span>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        <!-- Sobre -->
+        <section class="profile__about" aria-labelledby="about-title">
+          <h2 id="about-title" class="section-title">Sobre</h2>
+          <p class="about__text">
+           Sou estudante do 4º período de Sistemas de Informação na FACISA, com foco em desenvolvimento backend. 
+           Tenho me aprofundado em tecnologias do lado do servidor e busco constantemente melhorar minhas habilidades em lógica, APIs e estrutura de dados.
+           Já concluí alguns cursos na plataforma Alura voltados para backend, o que tem me dado uma base sólida para atuar em projetos reais e continuar evoluindo na área. 
+           Gosto de entender como as coisas funcionam por trás das interfaces e estou sempre aberto a novos aprendizados e desafios.
+          </p>
+        </section>
+
+        <!-- Skills / Ferramentas -->
+        <section class="profile__skills" aria-labelledby="skills-title">
+          <h2 id="skills-title" class="section-title">Skills & Ferramentas</h2>
+
+          <div class="skills__groups">
+            <div class="skill__group">
+              <ul class="chips">
+                
+                <li class="chip">Python</li>
+                <li class="chip">SQL</li>
+                <li class="chip">Java</li>
+                <li class="chip">CSS</li>
+                <li class="chip">HTML</li>
+                <li class="chip">JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="profile__projects" aria-labelledby="projects-title">
+          <h2 id="projects-title" class="section-title">Projetos</h2>
+
+          <div class="projects__grid">
+            <!-- Card 1 -->
+            <article class="project__card">
+              <a
+                class="project__thumb"
+             
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="../assets/img/projeto-estudantil.png"
+                  alt="Preview do Projeto 1"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project__body">
+                <h3 class="project__title">
+                  <p
+                    >Site Estudantil Alura Books</p
+                  >
+                </h3>
+                <p class="project__desc">
+                  Projeto colaborativo e aprendizado de um site do e-commerce AluraBooks, uma livraria online de livros sobre tecnologia.
+                </p>
+                <ul class="project__tags">
+    
+                  <li>CSS</li>
+                  <li>SwiperJS</li>
+                  <li>HTML</li>
+                </ul>
+              </div>
+            </article>
+
+            
+
+           
+          </div>
+        </section>
+
+        <!-- Contato & Redes -->
+        <section class="profile__contact" aria-labelledby="contact-title">
+          <h2 id="contact-title" class="section-title">Contato & Redes</h2>
+
+          <ul class="contact__list">
+            <li>
+              <a
+                class="contact__link"
+                href="mailto:djoaofeliperll33@gmail.com"
+                aria-label="Enviar e-mail"
+              >
+                <img src="../assets/icons/gmail.svg" alt="" aria-hidden="true" />
+                E-mail
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact__link"
+                href="https://www.instagram.com/joaofeliperl/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="../assets/icons/instagram.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                Intagram
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact__link"
+                href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="../assets/icons/linkedin.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                linkedin
+              </a>
+            </li>
+            <li></li>
+            <button
+              class="contact__link contact__copy"
+              data-copy="(83) 9 8612-7031"
+              aria-label="Copiar telefone"
+            >
+              <img src="../assets/icons/telefone.svg" alt="" aria-hidden="true" />
+              Telefone <span class="copy__hint">copiar</span>
+            </button>
+            <p class="copy__toast" role="status" aria-live="polite" hidden></p>
+          </ul>
+        </section>
+        
+      </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
