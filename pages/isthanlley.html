@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaN Squad - Isthanlley</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="nav__brand" href="#">
+          <img class="nav__img" src="../assets/img/logo.png" alt="logo equipe" />
+        </a>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-label="Abrir menu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+        >
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <ul class="nav__list">
+            <li><a class="nav__link nav__cta" href="../index.html">Voltar</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- perfil isthanlley -->
+
+    <section class="profile" id="perfil">
+      <div class="profile__container">
+        <!-- Cabeçalho: foto + infos básicas -->
+        <header class="profile__header">
+          <img
+            src="../assets/img/istha.png"
+            alt="Foto de perfil de isthanlley"
+            class="profile__photo"
+            width="180"
+            height="180"
+          />
+
+          <div class="profile__meta">
+            <h1 class="profile__name">Isthanlley</h1>
+            <p class="profile__role">Product Owner</p>
+
+            <ul class="profile__facts" aria-label="Informações rápidas">
+              <li>
+                <span class="fact__label">Local:</span>
+                <span class="fact__value">Campina Grande – PB</span>
+              </li>
+              <li>
+                <span class="fact__label">Idade:</span>
+                <span class="fact__value">24 anos</span>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        <!-- Sobre -->
+        <section class="profile__about" aria-labelledby="about-title">
+          <h2 id="about-title" class="section-title">Sobre</h2>
+          <p class="about__text">
+           Sou Product Owner, atualmente atuando na Unioon Tech Group, onde participo da definição de backlog, priorização de funcionalidades e alinhamento entre negócio e tecnologia em diferentes projetos. Estou cursando o 4º período de Sistemas no Centro Universitário Unifacisa. Iniciei meus estudos em produto e metodologias ágeis em 2024 e, em 2025, conquistei minha primeira oportunidade profissional na área, marcando minha transição de carreira. Desde então, venho me dedicando a evoluir constantemente e tenho encontrado grande satisfação nesse novo desafio profissional.
+          </p>
+        </section>
+
+        <!-- Skills / Ferramentas -->
+        <section class="profile__skills" aria-labelledby="skills-title">
+          <h2 id="skills-title" class="section-title">Skills & Ferramentas</h2>
+
+          <div class="skills__groups">
+            <div class="skill__group">
+              <ul class="chips">
+                <li class="chip">Hard Skills</li>
+                <li class="chip">Soft Skills</li>
+                <li class="chip">Gestão de Backlog</li>
+                <li class="chip">Metodologias Ágeis</li>
+                <li class="chip">Análise de Negócio</li>
+                <li class="chip">Técnicas de Priorização</li>
+                <li class="chip">Análise de Dados</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="profile__projects" aria-labelledby="projects-title">
+          <h2 id="projects-title" class="section-title">Projetos</h2>
+
+          <div class="projects__grid">
+            <!-- Card 1 -->
+            <article class="project__card">
+              <a
+                class="project__thumb"
+                href="https://pixdaalegria.com.br/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="../assets/img/site-isthanlley.png"
+                  alt="Preview do Projeto 1"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project__body">
+                <h3 class="project__title">
+                  <a
+                    href="https://kiponto.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Site Kiponto</a
+                  >
+                </h3>
+                <p class="project__desc">
+                 Projeto colaborativo profissional. Atuei inicialmente como programador frontend e, posteriormente, assumi a função de Product Owner no desenvolvimento do Kiponto, uma solução de batida de ponto digital. Fui responsável por organizar e priorizar demandas, acompanhar o design e garantir entregas estratégicas. Entre os principais resultados, destacam-se a implementação das funcionalidades de registro e acompanhamento de ponto, que trouxeram maior eficiência e organização ao projeto.
+                </p>
+           
+          </div>
+        </section>
+
+        <!-- Contato & Redes -->
+        <section class="profile__contact" aria-labelledby="contact-title">
+          <h2 id="contact-title" class="section-title">Contato & Redes</h2>
+
+          <ul class="contact__list">
+            <li>
+              <a
+                class="contact__link"
+                href="mailto:isthanlleyfragoso99@gmail.com"
+                aria-label="Enviar e-mail"
+              >
+                <img src="../assets/icons/gmail.svg" alt="" aria-hidden="true" />
+                E-mail
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact__link"
+                href="https://www.instagram.com/isthanfragoso/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="../assets/icons/instagram.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                Intagram
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact__link"
+                href="https://www.linkedin.com/in/isthanlley-fragoso-79947522b/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="../assets/icons/linkedin.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                linkedin
+              </a>
+            </li>
+            <li></li>
+            <button
+              class="contact__link contact__copy"
+              data-copy="(83) 98183-7080"
+              aria-label="Copiar telefone"
+            >
+              <img src="../assets/icons/telefone.svg" alt="" aria-hidden="true" />
+              Telefone <span class="copy__hint">copiar</span>
+            </button>
+            <p class="copy__toast" role="status" aria-live="polite" hidden></p>
+          </ul>
+        </section>
+        
+      </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
+
